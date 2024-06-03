@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utilisateurs inscrits</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Utilisateurs inscrits</h1>
+        <div id="voiceCounts">
+            <p>Total 1ère voix: <span id="voice1Count">0</span></p>
+            <p>Total 2ème voix: <span id="voice2Count">0</span></p>
+            <p>Total 3ème voix: <span id="voice3Count">0</span></p>
+        </div>
+        <div id="userList"></div>
+    </div>
+    <!-- Inclure la bibliothèque Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database-compat.js"></script>
+    <!-- Inclure votre fichier JavaScript -->
+    <script src="users.js"></script>
+</body>
+</html>

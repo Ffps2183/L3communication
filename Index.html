@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription L3COM</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Firebase App (the core Firebase SDK) -->
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+    <!-- Firebase Database -->
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database-compat.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Inscription des membres de L3COM</h1>
+        <form id="l3comForm">
+            <div class="form-group">
+                <label for="name">Nom:</label>
+                <input type="text" id="name" required>
+            </div>
+            <div class="form-group">
+                <label for="voiceOption">Option de voix:</label>
+                <select id="voiceOption" required>
+                    <option value="1">1ère voix</option>
+                    <option value="2">2ème voix</option>
+                    <option value="3">3ème voix</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="phone">Numéro de téléphone:</label>
+                <input type="text" id="phone" required>
+            </div>
+            <button type="submit">Soumettre</button>
+        </form>
+    </div>
+</body>
+</html>
